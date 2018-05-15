@@ -42,6 +42,25 @@ class TestRover extends TestCase
         $this->assertEquals(0,$rover->getX());
         $this->assertEquals(2,$rover->getY());
 
+        $rover= new Rover(1,2,"NE");
+        $rover->moveForward();
+        $this->assertEquals(2,$rover->getX());
+        $this->assertEquals(2,$rover->gety());
+
+        $rover= new Rover(1,2,"SE");
+        $rover->moveForward();
+        $this->assertEquals(2,$rover->getX());
+        $this->assertEquals(2,$rover->gety());
+
+        $rover= new Rover(1,2,"NW");
+        $rover->moveForward();
+        $this->assertEquals(2,$rover->getX());
+        $this->assertEquals(2,$rover->gety());
+
+        $rover= new Rover(1,2,"SW");
+        $rover->moveForward();
+        $this->assertEquals(2,$rover->getX());
+        $this->assertEquals(2,$rover->gety());
     }
 
 }

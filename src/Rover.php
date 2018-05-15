@@ -71,6 +71,34 @@ class Rover
             $this->x--;
 
         }
+        elseif ($this->getOrientation()==="NE")
+        {
+
+            $this->y++;
+            $this->x++;
+
+        }
+        elseif ($this->getOrientation()==="SE")
+        {
+
+            $this->y--;
+            $this->x++;
+
+        }
+        elseif ($this->getOrientation()==="NW")
+        {
+
+            $this->y++;
+            $this->x--;
+
+        }
+        elseif ($this->getOrientation()==="SW")
+        {
+
+            $this->y--;
+            $this->x--;
+
+        }
         else
         {
 
